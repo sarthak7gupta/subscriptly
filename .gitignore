@@ -2,8 +2,11 @@
 .vercel
 node_modules
 .env*
-requirements.md
+hatchable.toml
 graphify-out/
+.impeccable/
 dist/
 .astro/
+
+
 

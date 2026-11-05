@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light dark;
+  }
+
+  body {
+    @apply antialiased min-h-screen transition-colors duration-200;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11', 'tnum';
+  }
+}
+
+/* =========================================================
+   TAKE 1: Swiss Financial Ledger (Precision Modernist)
+   ========================================================= */
+html[data-design-take="swiss"] {
+  --font-display: 'Inter', -apple-system, sans-serif;
+}
+html[data-design-take="swiss"] body {
+  background-color: #f6f7f8;
+  color: #090a0c;
+}
+html.dark[data-design-take="swiss"] body {
+  background-color: #0b0c0e;
+  color: #f1f2f4;
+}
+html[data-design-take="swiss"] .rounded-2xl,
+html[data-design-take="swiss"] .rounded-3xl,
+html[data-design-take="swiss"] .rounded-xl,
+html[data-design-take="swiss"] .rounded-lg {
+  border-radius: 2px !important;
+}
+html[data-design-take="swiss"] .shadow-card,
+html[data-design-take="swiss"] .shadow-subtle,
+html[data-design-take="swiss"] .shadow-float {
+  box-shadow: none !important;
+}
+html[data-design-take="swiss"] button,
+html[data-design-take="swiss"] input,
+html[data-design-take="swiss"] select {
+  border-radius: 2px !important;
+}
+
+/* =========================================================
+   TAKE 2: Neo-Physicalist Wallet (Tactile Card Metaphor)
+   ========================================================= */
+html[data-design-take="wallet"] body {
+  background-color: #f1f4f9;
+}
+html.dark[data-design-take="wallet"] body {
+  background-color: #080d1a;
+}
+html[data-design-take="wallet"] .rounded-2xl {
+  border-radius: 1.25rem !important;
+}
+html[data-design-take="wallet"] .shadow-card {
+  box-shadow: 0 16px 36px -10px rgba(15, 23, 42, 0.18), 0 0 0 1px rgba(15, 23, 42, 0.08) !important;
+}
+html.dark[data-design-take="wallet"] .shadow-card {
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.08) !important;
+}
+
+/* =========================================================
+   TAKE 3: Terminal Ops HUD (Developer Command Deck)
+   ========================================================= */
+html[data-design-take="terminal"] {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace !important;
+}
+html[data-design-take="terminal"] body {
+  background-color: #05070a !important;
+  color: #38ef7d !important;
+}
+html[data-design-take="terminal"] h1,
+html[data-design-take="terminal"] h2,
+html[data-design-take="terminal"] h3,
+html[data-design-take="terminal"] p,
+html[data-design-take="terminal"] span,
+html[data-design-take="terminal"] button,
+html[data-design-take="terminal"] input,
+html[data-design-take="terminal"] select,
+html[data-design-take="terminal"] label {
+  font-family: 'JetBrains Mono', ui-monospace, monospace !important;
+}
+html[data-design-take="terminal"] .rounded-2xl,
+html[data-design-take="terminal"] .rounded-3xl,
+html[data-design-take="terminal"] .rounded-xl,
+html[data-design-take="terminal"] .rounded-lg {
+  border-radius: 4px !important;
+  border-color: #1e3a2b !important;
+  background-color: #090e14 !important;
+}
+html[data-design-take="terminal"] .text-slate-900,
+html[data-design-take="terminal"] .dark\:text-white,
+html[data-design-take="terminal"] .text-slate-700 {
+  color: #e2fced !important;
+}
+html[data-design-take="terminal"] .text-slate-400,
+html[data-design-take="terminal"] .text-slate-500 {
+  color: #528c68 !important;
+}
+html[data-design-take="terminal"] .bg-indigo-600 {
+  background-color: #10b981 !important;
+  color: #050a08 !important;
+  font-weight: 700 !important;
+}
+
+/* =========================================================
+   TAKE 4: Editorial Calm (Warm Literary Minimalist)
+   ========================================================= */
+html[data-design-take="editorial"] body {
+  background-color: #fcf9f2 !important;
+  color: #262421 !important;
+}
+html.dark[data-design-take="editorial"] body {
+  background-color: #1a1917 !important;
+  color: #edebe6 !important;
+}
+html[data-design-take="editorial"] h1,
+html[data-design-take="editorial"] h2 {
+  font-family: 'Newsreader', Georgia, 'Times New Roman', serif !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.02em !important;
+}
+html[data-design-take="editorial"] .rounded-2xl,
+html[data-design-take="editorial"] .rounded-3xl {
+  border-radius: 1.5rem !important;
+  border-color: #e7e2d6 !important;
+  background-color: #ffffff !important;
+}
+html.dark[data-design-take="editorial"] .rounded-2xl,
+html.dark[data-design-take="editorial"] .rounded-3xl {
+  border-color: #2e2b26 !important;
+  background-color: #22201d !important;
+}
+html[data-design-take="editorial"] .bg-indigo-600 {
+  background-color: #8c4a32 !important; /* warm terracotta */
+}
+
+/* =========================================================
+   TAKE 5: Ambient Bento Glass (Modern Fluid SaaS)
+   ========================================================= */
+html[data-design-take="bento"] body {
+  background-color: #f8fafc;
+}
+html.dark[data-design-take="bento"] body {
+  background-color: #090d16;
+}
+html[data-design-take="bento"] .rounded-2xl {
+  border-radius: 1.25rem !important;
+}
+html.dark[data-design-take="bento"] .bg-slate-900 {
+  background: rgba(15, 23, 42, 0.75) !important;
+  backdrop-filter: blur(16px) !important;
+  border-color: rgba(99, 102, 241, 0.18) !important;
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300/80 dark:bg-slate-700/80 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-400 dark:bg-slate-600;
+}
